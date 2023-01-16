@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The LIT Circle2</title>
+
+    <style>
+      body {
+        background: rgb(230, 230, 157);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        max-width: 800px;
+        background: rgb(79, 108, 36);
+        padding: 30px;
+        margin: 20px auto;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        color: rgb(79, 108, 36);
+      }
+
+      .theme-button {
+        
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .books-gallery-1 {
+        
+border-radius: 20px;
+        margin-right: 200px;
+        margin-bottom: 40px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .books-gallery-1:hover {
+        transform: scale(1.5);
+        transform: translate(35%);
+      }
+
+      .books-gallery-2 {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .books-gallery-2:hover {
+        transform: scale(1.5);
+        transform: translate(25%);
+      }
+
+      .grid-1 {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+
+      .grid-2 {
+        margin: 100px;
+        margin-left: 100px;
+        
+        
+        display: grid;
+        grid-template-columns: 1fr;
+     
+      }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+
+        .dark.container {
+            background: rgba (0, 0, 0, 0.7);
+        }
+      
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark Theme</button>
+    <div class="container">
+      <h1>Welcome to the LIT Circle</h1>
+      <h2>
+        Reasons to read: <br />
+        <hr />
+        Stress can be relieved by Literature <br />
+        Literature inspires imagination <br />
+        Literature keeps the brain active and healthy <br />
+        Literature helps a person to expand their vocabulary <br />
+        Literature enhances a person's writing skills <br />
+        Communication skills are improved by reading literature <br />
+      </h2>
+      <p>
+        <div class="grid-1">
+        
+        <img src="https://p.turbosquid.com/ts-thumb/2n/1HN548/P2tLBwQr/signature/png/1549811949/300x300/sharp_fit_q85/7603199ddf3038ccd0bea434370d1f679c590044/signature.jpg" class="books-gallery-1" />
+        <img src="images/book1.jpg" class="books-gallery-1" />
+        <img src="https://static.dezeen.com/uploads/2021/08/rsaaw-berkley-house-vancouver-canada-architecture_dezeen_2364_sq_3-300x300.jpg" class="books-gallery-2" /> </div>
+        
+        
+        <div class="grid-2">
+
+        <img src="https://i.pinimg.com/originals/7a/07/5a/7a075ae77e31249f5585f38cbeb77dd0.jpg" />
+       
+        
+       
+
+       
+        </div>
+      </p>
+      <p>
+        Hey All! This is Di, your L&L (latte & literature) aficionado. I opened
+        this club hoping that I will find more L&L fellows. Every week a book is
+        chosen, and will meet to discuss it. Join us for this week's meeting!
+      </p>
+    </div>
+    <footer>Coded by Diana Nica</footer>
+    <script>
+        function changeTheme () {
+            let body = document.querySelector ("body")
+            body.classList.add("dark");
+
+        }
+
+        let themeButton = document.querySelector (".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
